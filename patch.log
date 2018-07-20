@@ -1,0 +1,211 @@
+:clean
+:app:clean
+:app:preBuild UP-TO-DATE
+:app:extractProguardFiles
+:app:preLivePatchBuild
+:app:compileLivePatchAidl
+:app:compileLivePatchRenderscript
+:app:checkLivePatchManifest
+:app:generateLivePatchBuildConfig
+:app:prepareLintJar UP-TO-DATE
+:app:generateLivePatchResValues
+:app:generateLivePatchResources
+:app:mergeLivePatchResources
+:app:createLivePatchCompatibleScreenManifests
+:app:processLivePatchManifest
+:app:splitsDiscoveryTaskLivePatch
+:app:processLivePatchResources
+:app:generateLivePatchSources
+:app:javaPreCompileLivePatch
+:app:compileLivePatchJavaWithJavac
+:app:compileLivePatchNdk NO-SOURCE
+:app:compileLivePatchSources
+:app:lintVitalLivePatch
+:app:mergeLivePatchShaders
+:app:compileLivePatchShaders
+:app:generateLivePatchAssets
+:app:mergeLivePatchAssets
+:app:processLivePatchJavaRes NO-SOURCE
+:app:transformResourcesWithMergeJavaResForLivePatch
+:app:transformClassesAndResourcesWithProguardForLivePatch
+ProGuard, version 5.3.3
+Reading input...
+Reading program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\d5595b529bd5c3d5de4dba60dd213efe\jars\classes.jar] (filtered)
+Reading program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\e495a7b1dac40c757727e8110080cb9f\jars\classes.jar] (filtered)
+Reading program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\8fa4d9710301afcf5b77976a5785ebd1\jars\classes.jar] (filtered)
+Reading program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\356bcc16aa92aec787c9aa45093f5f57\jars\classes.jar] (filtered)
+Reading program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\14fbc5a9ece8af998b7131441d61e522\jars\classes.jar] (filtered)
+Reading program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\751f0fb647f814d9e4c6ac94d0c9797e\jars\classes.jar] (filtered)
+Reading program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\d4b3768f2efe7c4764f9a24bcf73c60b\jars\classes.jar] (filtered)
+Reading program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\d8326f7a8e493eab895371c9fec8ef44\jars\classes.jar] (filtered)
+Reading program jar [C:\Users\caiyong\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\27.1.1\39ded76b5e1ce1c5b2688e1d25cdc20ecee32007\support-annotations-27.1.1.jar] (filtered)
+Reading program jar [C:\Users\caiyong\.gradle\caches\modules-2\files-2.1\com.android.support.constraint\constraint-layout-solver\1.1.2\bfc967828daffc35ba01c9ee204d98b664930a0f\constraint-layout-solver-1.1.2.jar] (filtered)
+Reading program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\97311d3ebb20cf1b718e6623714de55b\jars\classes.jar] (filtered)
+Reading program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\d842f0ac609050a9409b4020b46bb239\jars\classes.jar] (filtered)
+Reading program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\247d6841e507343b274294b0f2909cfc\jars\classes.jar] (filtered)
+Reading program jar [C:\Users\caiyong\.gradle\caches\modules-2\files-2.1\android.arch.lifecycle\common\1.1.0\edf3f7bfb84a7521d0599efa3b0113a0ee90f85\common-1.1.0.jar] (filtered)
+Reading program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\65fdc57145af087a0f4e3ceab3ff6592\jars\classes.jar] (filtered)
+Reading program jar [C:\Users\caiyong\.gradle\caches\modules-2\files-2.1\android.arch.core\common\1.1.0\8007981f7d7540d89cd18471b8e5dcd2b4f99167\common-1.1.0.jar] (filtered)
+Reading program directory [D:\workspace_learn\GradleLearn\app\build\intermediates\classes\live\patch] (filtered)
+Reading program jar [D:\workspace_learn\GradleLearn\app\build\intermediates\transforms\mergeJavaRes\live\patch\0.jar] (filtered)
+Reading library jar [C:\Users\caiyong\AppData\Local\Android\Sdk\platforms\android-27\android.jar]
+Reading library jar [C:\Users\caiyong\AppData\Local\Android\Sdk\platforms\android-27\optional\org.apache.http.legacy.jar]
+Note: duplicate definition of library class [org.apache.http.params.HttpParams]
+Note: duplicate definition of library class [org.apache.http.params.HttpConnectionParams]
+Note: duplicate definition of library class [org.apache.http.params.CoreConnectionPNames]
+Note: duplicate definition of library class [org.apache.http.conn.ConnectTimeoutException]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.LayeredSocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.HostNameResolver]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.SocketFactory]
+Note: duplicate definition of library class [android.net.http.SslCertificate$DName]
+Note: duplicate definition of library class [android.net.http.SslError]
+Note: duplicate definition of library class [android.net.http.SslCertificate]
+Note: duplicate definition of library class [android.net.http.HttpResponseCache]
+Note: there were 11 duplicate class definitions.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#duplicateclass)
+Initializing...
+Ignoring unused library classes...
+  Original number of library classes: 4610
+  Final number of library classes:    1040
+Printing kept classes, fields, and methods...
+Shrinking...
+Printing usage to [D:\workspace_learn\GradleLearn\app\build\outputs\mapping\live\patch\usage.txt]...
+Removing unused program classes and class elements...
+  Original number of program classes: 1333
+  Final number of program classes:    670
+Inlining subroutines...
+Obfuscating...
+Printing mapping to [D:\workspace_learn\GradleLearn\app\build\outputs\mapping\live\patch\mapping.txt]...
+Preverifying...
+Writing output...
+Preparing output jar [D:\workspace_learn\GradleLearn\app\build\intermediates\transforms\proguard\live\patch\0.jar]
+  Copying resources from program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\d5595b529bd5c3d5de4dba60dd213efe\jars\classes.jar] (filtered)
+  Copying resources from program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\e495a7b1dac40c757727e8110080cb9f\jars\classes.jar] (filtered)
+  Copying resources from program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\8fa4d9710301afcf5b77976a5785ebd1\jars\classes.jar] (filtered)
+  Copying resources from program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\356bcc16aa92aec787c9aa45093f5f57\jars\classes.jar] (filtered)
+  Copying resources from program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\14fbc5a9ece8af998b7131441d61e522\jars\classes.jar] (filtered)
+  Copying resources from program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\751f0fb647f814d9e4c6ac94d0c9797e\jars\classes.jar] (filtered)
+  Copying resources from program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\d4b3768f2efe7c4764f9a24bcf73c60b\jars\classes.jar] (filtered)
+  Copying resources from program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\d8326f7a8e493eab895371c9fec8ef44\jars\classes.jar] (filtered)
+  Copying resources from program jar [C:\Users\caiyong\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\27.1.1\39ded76b5e1ce1c5b2688e1d25cdc20ecee32007\support-annotations-27.1.1.jar] (filtered)
+  Copying resources from program jar [C:\Users\caiyong\.gradle\caches\modules-2\files-2.1\com.android.support.constraint\constraint-layout-solver\1.1.2\bfc967828daffc35ba01c9ee204d98b664930a0f\constraint-layout-solver-1.1.2.jar] (filtered)
+  Copying resources from program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\97311d3ebb20cf1b718e6623714de55b\jars\classes.jar] (filtered)
+  Copying resources from program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\d842f0ac609050a9409b4020b46bb239\jars\classes.jar] (filtered)
+  Copying resources from program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\247d6841e507343b274294b0f2909cfc\jars\classes.jar] (filtered)
+  Copying resources from program jar [C:\Users\caiyong\.gradle\caches\modules-2\files-2.1\android.arch.lifecycle\common\1.1.0\edf3f7bfb84a7521d0599efa3b0113a0ee90f85\common-1.1.0.jar] (filtered)
+  Copying resources from program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\65fdc57145af087a0f4e3ceab3ff6592\jars\classes.jar] (filtered)
+  Copying resources from program jar [C:\Users\caiyong\.gradle\caches\modules-2\files-2.1\android.arch.core\common\1.1.0\8007981f7d7540d89cd18471b8e5dcd2b4f99167\common-1.1.0.jar] (filtered)
+  Copying resources from program directory [D:\workspace_learn\GradleLearn\app\build\intermediates\classes\live\patch] (filtered)
+  Copying resources from program jar [D:\workspace_learn\GradleLearn\app\build\intermediates\transforms\mergeJavaRes\live\patch\0.jar] (filtered)
+Printing classes to [D:\workspace_learn\GradleLearn\app\build\outputs\mapping\live\patch\dump.txt]...
+:app:transformClassesWithDexForLivePatch
+:app:mergeLivePatchJniLibFolders
+:app:transformNativeLibsWithMergeJniLibsForLivePatch
+:app:transformNativeLibsWithStripDebugSymbolForLivePatch
+:app:packageLivePatch
+:app:assembleLivePatch
+:app:preVideoPatchBuild
+:app:compileVideoPatchAidl
+:app:compileVideoPatchRenderscript
+:app:checkVideoPatchManifest
+:app:generateVideoPatchBuildConfig
+:app:generateVideoPatchResValues
+:app:generateVideoPatchResources
+:app:mergeVideoPatchResources
+:app:createVideoPatchCompatibleScreenManifests
+:app:processVideoPatchManifest
+:app:splitsDiscoveryTaskVideoPatch
+:app:processVideoPatchResources
+:app:generateVideoPatchSources
+:app:javaPreCompileVideoPatch
+:app:compileVideoPatchJavaWithJavac
+:app:compileVideoPatchNdk NO-SOURCE
+:app:compileVideoPatchSources
+:app:lintVitalVideoPatch
+:app:mergeVideoPatchShaders
+:app:compileVideoPatchShaders
+:app:generateVideoPatchAssets
+:app:mergeVideoPatchAssets
+:app:processVideoPatchJavaRes NO-SOURCE
+:app:transformResourcesWithMergeJavaResForVideoPatch
+:app:transformClassesAndResourcesWithProguardForVideoPatch
+ProGuard, version 5.3.3
+Reading input...
+Reading program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\d5595b529bd5c3d5de4dba60dd213efe\jars\classes.jar] (filtered)
+Reading program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\e495a7b1dac40c757727e8110080cb9f\jars\classes.jar] (filtered)
+Reading program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\8fa4d9710301afcf5b77976a5785ebd1\jars\classes.jar] (filtered)
+Reading program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\356bcc16aa92aec787c9aa45093f5f57\jars\classes.jar] (filtered)
+Reading program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\14fbc5a9ece8af998b7131441d61e522\jars\classes.jar] (filtered)
+Reading program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\751f0fb647f814d9e4c6ac94d0c9797e\jars\classes.jar] (filtered)
+Reading program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\d4b3768f2efe7c4764f9a24bcf73c60b\jars\classes.jar] (filtered)
+Reading program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\d8326f7a8e493eab895371c9fec8ef44\jars\classes.jar] (filtered)
+Reading program jar [C:\Users\caiyong\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\27.1.1\39ded76b5e1ce1c5b2688e1d25cdc20ecee32007\support-annotations-27.1.1.jar] (filtered)
+Reading program jar [C:\Users\caiyong\.gradle\caches\modules-2\files-2.1\com.android.support.constraint\constraint-layout-solver\1.1.2\bfc967828daffc35ba01c9ee204d98b664930a0f\constraint-layout-solver-1.1.2.jar] (filtered)
+Reading program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\97311d3ebb20cf1b718e6623714de55b\jars\classes.jar] (filtered)
+Reading program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\d842f0ac609050a9409b4020b46bb239\jars\classes.jar] (filtered)
+Reading program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\247d6841e507343b274294b0f2909cfc\jars\classes.jar] (filtered)
+Reading program jar [C:\Users\caiyong\.gradle\caches\modules-2\files-2.1\android.arch.lifecycle\common\1.1.0\edf3f7bfb84a7521d0599efa3b0113a0ee90f85\common-1.1.0.jar] (filtered)
+Reading program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\65fdc57145af087a0f4e3ceab3ff6592\jars\classes.jar] (filtered)
+Reading program jar [C:\Users\caiyong\.gradle\caches\modules-2\files-2.1\android.arch.core\common\1.1.0\8007981f7d7540d89cd18471b8e5dcd2b4f99167\common-1.1.0.jar] (filtered)
+Reading program directory [D:\workspace_learn\GradleLearn\app\build\intermediates\classes\video\patch] (filtered)
+Reading program jar [D:\workspace_learn\GradleLearn\app\build\intermediates\transforms\mergeJavaRes\video\patch\0.jar] (filtered)
+Reading library jar [C:\Users\caiyong\AppData\Local\Android\Sdk\platforms\android-27\android.jar]
+Reading library jar [C:\Users\caiyong\AppData\Local\Android\Sdk\platforms\android-27\optional\org.apache.http.legacy.jar]
+Note: duplicate definition of library class [org.apache.http.params.HttpParams]
+Note: duplicate definition of library class [org.apache.http.params.HttpConnectionParams]
+Note: duplicate definition of library class [org.apache.http.params.CoreConnectionPNames]
+Note: duplicate definition of library class [org.apache.http.conn.ConnectTimeoutException]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.LayeredSocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.HostNameResolver]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.SocketFactory]
+Note: duplicate definition of library class [android.net.http.SslCertificate$DName]
+Note: duplicate definition of library class [android.net.http.SslError]
+Note: duplicate definition of library class [android.net.http.SslCertificate]
+Note: duplicate definition of library class [android.net.http.HttpResponseCache]
+Note: there were 11 duplicate class definitions.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#duplicateclass)
+Initializing...
+Ignoring unused library classes...
+  Original number of library classes: 4610
+  Final number of library classes:    1040
+Printing kept classes, fields, and methods...
+Shrinking...
+Printing usage to [D:\workspace_learn\GradleLearn\app\build\outputs\mapping\video\patch\usage.txt]...
+Removing unused program classes and class elements...
+  Original number of program classes: 1333
+  Final number of program classes:    670
+Inlining subroutines...
+Obfuscating...
+Printing mapping to [D:\workspace_learn\GradleLearn\app\build\outputs\mapping\video\patch\mapping.txt]...
+Preverifying...
+Writing output...
+Preparing output jar [D:\workspace_learn\GradleLearn\app\build\intermediates\transforms\proguard\video\patch\0.jar]
+  Copying resources from program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\d5595b529bd5c3d5de4dba60dd213efe\jars\classes.jar] (filtered)
+  Copying resources from program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\e495a7b1dac40c757727e8110080cb9f\jars\classes.jar] (filtered)
+  Copying resources from program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\8fa4d9710301afcf5b77976a5785ebd1\jars\classes.jar] (filtered)
+  Copying resources from program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\356bcc16aa92aec787c9aa45093f5f57\jars\classes.jar] (filtered)
+  Copying resources from program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\14fbc5a9ece8af998b7131441d61e522\jars\classes.jar] (filtered)
+  Copying resources from program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\751f0fb647f814d9e4c6ac94d0c9797e\jars\classes.jar] (filtered)
+  Copying resources from program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\d4b3768f2efe7c4764f9a24bcf73c60b\jars\classes.jar] (filtered)
+  Copying resources from program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\d8326f7a8e493eab895371c9fec8ef44\jars\classes.jar] (filtered)
+  Copying resources from program jar [C:\Users\caiyong\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\27.1.1\39ded76b5e1ce1c5b2688e1d25cdc20ecee32007\support-annotations-27.1.1.jar] (filtered)
+  Copying resources from program jar [C:\Users\caiyong\.gradle\caches\modules-2\files-2.1\com.android.support.constraint\constraint-layout-solver\1.1.2\bfc967828daffc35ba01c9ee204d98b664930a0f\constraint-layout-solver-1.1.2.jar] (filtered)
+  Copying resources from program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\97311d3ebb20cf1b718e6623714de55b\jars\classes.jar] (filtered)
+  Copying resources from program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\d842f0ac609050a9409b4020b46bb239\jars\classes.jar] (filtered)
+  Copying resources from program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\247d6841e507343b274294b0f2909cfc\jars\classes.jar] (filtered)
+  Copying resources from program jar [C:\Users\caiyong\.gradle\caches\modules-2\files-2.1\android.arch.lifecycle\common\1.1.0\edf3f7bfb84a7521d0599efa3b0113a0ee90f85\common-1.1.0.jar] (filtered)
+  Copying resources from program jar [C:\Users\caiyong\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\65fdc57145af087a0f4e3ceab3ff6592\jars\classes.jar] (filtered)
+  Copying resources from program jar [C:\Users\caiyong\.gradle\caches\modules-2\files-2.1\android.arch.core\common\1.1.0\8007981f7d7540d89cd18471b8e5dcd2b4f99167\common-1.1.0.jar] (filtered)
+  Copying resources from program directory [D:\workspace_learn\GradleLearn\app\build\intermediates\classes\video\patch] (filtered)
+  Copying resources from program jar [D:\workspace_learn\GradleLearn\app\build\intermediates\transforms\mergeJavaRes\video\patch\0.jar] (filtered)
+Printing classes to [D:\workspace_learn\GradleLearn\app\build\outputs\mapping\video\patch\dump.txt]...
+:app:transformClassesWithDexForVideoPatch
+:app:mergeVideoPatchJniLibFolders
+:app:transformNativeLibsWithMergeJniLibsForVideoPatch
+:app:transformNativeLibsWithStripDebugSymbolForVideoPatch
+:app:packageVideoPatch
+:app:assembleVideoPatch
+:app:assemblePatch
+
+BUILD SUCCESSFUL in 20s
+52 actionable tasks: 51 executed, 1 up-to-date

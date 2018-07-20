@@ -1,0 +1,92 @@
+import com.android.build.gradle.ProguardFiles
+
+apply plugin: 'com.android.application'
+
+def currentVariantName
+def com.android.build.gradle.api.ApplicationVariant currentVariant
+
+def myproguard = "a"
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.caiy.learn.gradle"
+        minSdkVersion 14
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        flavorDimensions "1"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        patch {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules${myproguard}.pro' , getMyProguardFile("1.txt")
+        }
+    }
+
+    productFlavors{
+        live
+        video
+    }
+
+    afterEvaluate {
+
+        println("testing---" + myproguard)
+
+        tasks.matching {
+            it.name.startsWith("transformClassesAndResourcesWithProguard")
+        }.each {
+            it.doFirst {
+                String[] names= it.name.split("For");
+                currentVariantName = names[1];
+                applicationVariants.all { variant ->
+                    if(variant.name.equalsIgnoreCase(currentVariantName)){
+                        currentVariant = variant;
+                    }
+                }
+
+                myproguard = "b"
+
+                println("testing----currentVariant:" + currentVariant.name + "," + currentVariant.buildType.name + "," + currentVariant.productFlavors[0].name)
+                currentVariant.buildType.proguardFiles.each { proguardFile ->
+                    println("testing----proguardFile before:" + proguardFile.absolutePath)
+                }
+//                currentVariant.buildType.proguardFiles = [new File("D:\\workspace_learn\\GradleLearn\\app\\proguard-rules1.pro"),new File("D:\\workspace_learn\\GradleLearn\\app\\proguard-rules2.pro")]
+//                com.android.build.gradle.internal.dsl.BuildType modifyedBuildType = new com.android.build.gradle.internal.dsl.BuildType(currentVariant.buildType.name,project,null)
+//                modifyedBuildType.proguardFiles = [new File("D:\\workspace_learn\\GradleLearn\\app\\proguard-rules1.pro"),new File("D:\\workspace_learn\\GradleLearn\\app\\proguard-rules2.pro")]
+//                modifyedBuildType.minifyEnabled = currentVariant.buildType.minifyEnabled;
+//                currentVariant.buildType = modifyedBuildType;
+//                currentVariant.buildType.proguardFiles.each { proguardFile ->
+//                    println("testing----proguardFile after:" + proguardFile.absolutePath)
+//                }
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
+
+public File getMyProguardFile(String name) {
+//    if(!ProguardFiles.KNOWN_FILE_NAMES.contains(name)) {
+//        this.extraModelInfo.handleSyncError((String)null, 0, ProguardFiles.UNKNOWN_FILENAME_MESSAGE);
+//    }
+//
+//    return ProguardFiles.getDefaultProguardFile(name, this.project);
+    return new File(name)
+}
