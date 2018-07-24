@@ -7,6 +7,11 @@ def com.android.build.gradle.api.ApplicationVariant currentVariant
 
 def myproguard = "a"
 
+//判断当前系统是否是window
+def isWindows() {
+    return org.gradle.internal.os.OperatingSystem.current().isWindows()
+}
+
 android {
     compileSdkVersion 27
     defaultConfig {
@@ -80,4 +85,10 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
+
+task testSystem{
+    doLast{
+        println "当前系统是" + isWindows() ? "window系统" : "mac系统";
+    }
 }
